@@ -1,7 +1,12 @@
 const express = require('express')
 const router = express.Router()
-const {index} = require('../config/router')
+const {index, register, login} = require('../config/router')
+
 
 router.get('/', index)
+router.get('/register', register)
+router.get('/login', login)
+
+
 
 module.exports = router
